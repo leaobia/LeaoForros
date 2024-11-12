@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header, main, footer{
+    width: 100vw;
+}

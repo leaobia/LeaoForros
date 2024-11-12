@@ -1,0 +1,86 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D7E8F1;
+    height: 15vh;
+    color: #486591;
+   font-size: clamp(15px, 4vw, 20px); 
+}
+
+.header__content{
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    gap: 2vw;
+}
+
+.header__nav-list{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.header__nav-item {
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header__buttons{
+    display: flex;
+    gap: 2vw;
+}
+
+.header__nav-item:hover {
+    border-bottom: 3px solid #486591;
+}
+
+
+header button{
+    background-color: #486591;
+    text-transform: uppercase;
+    color: #D7E8F1;
+    width: 10vw;
+    padding: 2% 0;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4%;
+    transition: scale .3s ease-in-out;
+}
+.header__nav-link, .header__sign-in-link{
+    color: #486591;
+}
+header button:hover{
+   scale: 0.8;
+}
+.header__sign-in-link{
+    transition: scale .3s linear;
+}
+.header__sign-in-link:hover{
+    font-weight: bolder;
+}
+
+.header__sign-up-link{
+    color: #ffff;
+}
+
+@media (max-width:600px) {
+    header{
+        justify-content: center;
+        gap: 5vw;
+    }
+    .header__content{
+        gap: 5vw;
+    }
+    .header__buttons{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header button{
+        width: 30vw;
+    }
+}

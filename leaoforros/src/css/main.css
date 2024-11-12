@@ -1,0 +1,41 @@
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.main__carousel-image{
+    width: 100vw;
+    max-height: 529px;
+}
+
+.main__about {
+    background-color: #152E53; 
+    text-align: center;
+    width: clamp(300px, 30vw, 500px);
+    color: #ffff;
+    display: grid;
+    place-self: center;
+    margin-top: -10%;
+    line-height: clamp(0px, 5vw, 20px);
+    font-size: clamp(10px, 2vw, 18px);
+    padding: 1% 2%;
+    letter-spacing: 1px;
+}
+
+.main__projects{
+    padding-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .main__carousel-image{
+       height: 280px;
+    }
+    
+.main__about {
+    margin-top: -20%;
+}
+}
