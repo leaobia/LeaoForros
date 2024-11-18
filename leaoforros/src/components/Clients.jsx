@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/clientes.css'
+import '../css/clientes.scss'
 
 import eurofarmaLogo from '../img/eurofarma.png';
 import pfizerLogo from '../img/pfizer.png';
