@@ -1,14 +1,14 @@
 import React from 'react';
-import '../estilo/header.scss'
+import '../estilo/header.scss';
 
 import logo from '../img/logo.png';
 import iconLogo from '../img/iconLogo.png';
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="header poly-regular">
       <img
-         srcSet={`${logo} 1024w, ${iconLogo} 768w`}
+        srcSet={`${logo} 1024w, ${iconLogo} 768w`}
         sizes="(max-width: 768px) 100vw, 1024px"
         alt="Logo da empresa Quartzo Azul"
         className="header__logo"
@@ -37,11 +37,14 @@ const Header = () => {
         
         <div className="header__buttons">
           <button className="header__cta-button" aria-label="Comece agora">
-  
-           <a className='header__sign-up-link'  href="https://wa.me/5511961482191" 
-            target="_blank"
-            rel="noopener noreferrer"
-            >Fazer um orçamento</a> 
+            <a 
+              className="header__sign-up-link" 
+              href="https://wa.me/5511961482191" 
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fazer um orçamento
+            </a>
           </button>
         </div>
       </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import '../estilo/footer.scss'
-import whatsapp from '../img/whatsapp.webp'
+import '../estilo/footer.scss';
+import whatsapp from '../img/whatsapp.webp';
 
-const Footer = () => {
+const Footer: React.FC = () => {
 
   const scrollToTop = () => {
     window.scrollTo({
