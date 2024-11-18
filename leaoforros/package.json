@@ -1,7 +1,6 @@
 {
   "name": "leaoforros",
   "version": "0.1.0",
-  "homepage": "https://leaobia.github.io/LeaoForros/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -19,8 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b gh-pages -m 'Deploy React app to GitHub Pages' --repo https://github.com/leaobia/LeaoForros.git"
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,10 +39,8 @@
     ]
   },
   "devDependencies": {
-    "react-scripts": "^5.0.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "gh-pages": "^3.2.3",
     "sass": "^1.81.0"
   }
 }
