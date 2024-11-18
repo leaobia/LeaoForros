@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/LeaoForros/static/css/main.4c467598.css",
+    "main.js": "/LeaoForros/static/js/main.250cb8ea.js",
+    "static/js/453.13842716.chunk.js": "/LeaoForros/static/js/453.13842716.chunk.js",
+    "static/media/carrossel.png": "/LeaoForros/static/media/carrossel.2886cd3622f462f2e474.png",
+    "static/media/carrossel2.png": "/LeaoForros/static/media/carrossel2.e47b17c6e8ae7d738575.png",
+    "static/media/cacau.png": "/LeaoForros/static/media/cacau.c150a5031b74bb4815aa.png",
+    "static/media/warner.png": "/LeaoForros/static/media/warner.df7f6ca347a9420115b8.png",
+    "static/media/whatsapp.webp": "/LeaoForros/static/media/whatsapp.314c6f26124aa792a6eb.webp",
+    "static/media/carrossel3.jpeg": "/LeaoForros/static/media/carrossel3.ff3ebb72fd0eb27be668.jpeg",
+    "static/media/pfizer.png": "/LeaoForros/static/media/pfizer.c18da8b3b1c88732c6b4.png",
+    "static/media/eurofarma.png": "/LeaoForros/static/media/eurofarma.c1bf4add129bc8342806.png",
+    "index.html": "/LeaoForros/index.html",
+    "main.4c467598.css.map": "/LeaoForros/static/css/main.4c467598.css.map",
+    "main.250cb8ea.js.map": "/LeaoForros/static/js/main.250cb8ea.js.map",
+    "453.13842716.chunk.js.map": "/LeaoForros/static/js/453.13842716.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c467598.css",
+    "static/js/main.250cb8ea.js"
+  ]
+}
