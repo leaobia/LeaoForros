@@ -1,0 +1,15 @@
+$width: 100vw;
+$overflow: hidden;
+$scroll-behavior: smooth;
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: $width;
+  overflow-x: $overflow;
+  scroll-behavior: $scroll-behavior;
+}
+
+header, main, footer {
+  width: $width;
+}

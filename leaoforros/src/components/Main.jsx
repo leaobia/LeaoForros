@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import '../css/main.css';
+import '../estilo/main.scss';
 import Projects from './Projects';
 import Clients from './Clients';
 

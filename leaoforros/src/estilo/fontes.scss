@@ -1,0 +1,16 @@
+$poly-font-family: "Poly", serif;
+$kaisei-font-family: "Kaisei HarunoUmi", serif;
+$font-weight-regular: 400;
+$font-style-normal: normal;
+
+.poly-regular {
+  font-family: $poly-font-family;
+  font-weight: $font-weight-regular;
+  font-style: $font-style-normal;
+}
+
+.kaisei-harunoumi-regular {
+  font-family: $kaisei-font-family;
+  font-weight: $font-weight-regular;
+  font-style: $font-style-normal;
+}

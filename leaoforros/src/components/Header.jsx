@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/header.css'
+import '../estilo/header.scss'
 
 import logo from '../img/logo.png';
 import iconLogo from '../img/iconLogo.png';

@@ -1,0 +1,105 @@
+$background-color-header: #D7E8F1;
+$text-color-header: #486591;
+$button-background: $text-color-header;
+$button-hover-scale: 0.8;
+$button-width: 10vw;
+$button-padding: 2% 0;
+$button-border-radius: 4%;
+$font-size-base: clamp(15px, 4vw, 20px);
+$font-size-button: 1rem;
+$gap-content: 2vw;
+$gap-mobile: 5vw;
+$sign-up-color: #ffff;
+$sign-in-link-hover-weight: bolder;
+$transition-speed: .3s;
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $background-color-header;
+  height: 15vh;
+  color: $text-color-header;
+  font-size: $font-size-base;
+
+  .header__content {
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    gap: $gap-content;
+  }
+
+  .header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: $gap-content;
+  }
+
+  .header__nav-item {
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+      border-bottom: 3px solid $text-color-header;
+    }
+  }
+
+  .header__buttons {
+    display: flex;
+    gap: $gap-content;
+  }
+
+  button {
+    background-color: $button-background;
+    text-transform: uppercase;
+    color: $background-color-header;
+    width: $button-width;
+    padding: $button-padding;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: $button-border-radius;
+    transition: scale $transition-speed ease-in-out;
+
+    &:hover {
+      scale: $button-hover-scale;
+    }
+  }
+
+  .header__nav-link,
+  .header__sign-in-link {
+    color: $text-color-header;
+  }
+
+  .header__sign-in-link {
+    transition: scale $transition-speed linear;
+
+    &:hover {
+      font-weight: $sign-in-link-hover-weight;
+    }
+  }
+
+  .header__sign-up-link {
+    color: $sign-up-color;
+  }
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    gap: $gap-mobile;
+
+    .header__content {
+      gap: $gap-mobile;
+    }
+
+    .header__buttons {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    button {
+      width: 30vw;
+    }
+  }
+}

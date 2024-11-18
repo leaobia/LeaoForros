@@ -1,0 +1,54 @@
+$background-color-about: #152E53;
+$text-color-about: #ffff;
+$font-size-about: clamp(10px, 2vw, 18px);
+$line-height-about: clamp(0px, 5vw, 20px);
+$letter-spacing-about: 1px;
+$padding-about: 1% 2%;
+$width-about: clamp(300px, 30vw, 500px);
+$carousel-height: 529px;
+$carousel-height-mobile: 280px;
+$gap-projects: 5vh;
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.main__carousel-image {
+  width: 100vw;
+  max-height: $carousel-height;
+}
+
+.main__about {
+  background-color: $background-color-about;
+  text-align: center;
+  width: $width-about;
+  color: $text-color-about;
+  display: grid;
+  place-self: center;
+  margin-top: -10%;
+  line-height: $line-height-about;
+  font-size: $font-size-about;
+  padding: $padding-about;
+  letter-spacing: $letter-spacing-about;
+}
+
+.main__projects {
+  padding-top: $gap-projects;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width: 600px) {
+  .main__carousel-image {
+    height: $carousel-height-mobile;
+  }
+
+  .main__about {
+    margin-top: -20%;
+  }
+}

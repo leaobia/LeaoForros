@@ -1,0 +1,71 @@
+$background-color: #D7E8F1;
+$text-color: #486591;
+$whatsapp-color: #25d366;
+$back-to-top-bg: #0056b3;
+$back-to-top-hover-bg: #152E53;
+$font-size-main: 1rem;
+$font-size-h3: 1.2rem;
+$font-size-p: 0.9rem;
+$padding-main: 20px;
+$padding-button: 10px 20px;
+$border-radius: 5px;
+$gap-content: 20px;
+$whatsapp-icon-size: 20px;
+$whatsapp-icon-margin: 8px;
+
+.footer {
+  background-color: $background-color;
+  color: $text-color;
+  padding: $padding-main 0;
+  position: relative;
+  margin-top: 5vh;
+
+  .footer__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $gap-content;
+  }
+
+  .footer__item {
+    text-align: center;
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: $font-size-h3;
+    }
+
+    p {
+      font-size: $font-size-p;
+    }
+  }
+
+  .footer__whatsapp-link {
+    color: $whatsapp-color;
+    text-decoration: none;
+    font-size: $font-size-main;
+    display: flex;
+    align-items: center;
+
+    .footer__whatsapp-icon {
+      width: $whatsapp-icon-size;
+      height: $whatsapp-icon-size;
+      margin-right: $whatsapp-icon-margin;
+    }
+  }
+
+  .footer__back-to-top {
+    background-color: $back-to-top-bg;
+    color: white;
+    border: none;
+    padding: $padding-button;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-size: $font-size-main;
+
+    &:hover {
+      background-color: $back-to-top-hover-bg;
+    }
+  }
+}

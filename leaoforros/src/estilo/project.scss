@@ -1,0 +1,37 @@
+$card-width: 300px;
+$card-border: 1px solid #ccc;
+$card-border-radius: 8px;
+$card-img-height: 200px;
+$card-padding: 16px;
+$font-size-description: 14px;
+$text-color-description: #333;
+$gap-projects: 20px;
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap-projects;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card {
+  width: $card-width;
+  border: $card-border;
+  border-radius: $card-border-radius;
+  overflow: hidden;
+}
+
+.project-card__img {
+  width: 100%;
+  height: $card-img-height;
+}
+
+.project-card__body {
+  padding: $card-padding;
+}
+
+.project-card__description {
+  font-size: $font-size-description;
+  color: $text-color-description;
+}

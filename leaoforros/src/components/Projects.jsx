@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/project.css'
+import '../estilo/project.scss'
 
 import carrosselImg1 from '../img/carrossel.png';
 import carrosselImg2 from '../img/carrossel2.png';

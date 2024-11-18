@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../css/footer.css'
+import '../estilo/footer.scss'
 import whatsapp from '../img/whatsapp.webp'
 
 const Footer = () => {
