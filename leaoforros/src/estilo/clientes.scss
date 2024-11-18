@@ -29,7 +29,7 @@ $animation-timing: ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: $gap;
   overflow: hidden;
   position: relative;
