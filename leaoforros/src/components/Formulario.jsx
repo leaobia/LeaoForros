@@ -42,7 +42,7 @@ function Formulario() {
 - Endereço: ${endereco.logradouro}, ${endereco.bairro}, ${endereco.localidade} - ${endereco.uf}.
 - CEP: ${cep}`;
 
-    const numeroWhatsapp = "5511961482191"; 
+    const numeroWhatsapp = "5511958667824"; 
     const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, "_blank");
   };
