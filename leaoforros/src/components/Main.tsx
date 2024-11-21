@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import '../estilo/main.scss';
 import Projects from './Projects.tsx';
 import Clients from './Clients.tsx';
+import Formulario from './Formulario.jsx';
 
 import carrosselImg1 from '../img/carrossel.png';
 import carrosselImg2 from '../img/carrossel2.png';
@@ -50,6 +51,8 @@ const Main = () => {
         <Projects />
         <Clients />
       </section>
+
+      <Formulario/>
     </main>
   );
 };

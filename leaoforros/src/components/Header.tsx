@@ -39,9 +39,7 @@ const Header: React.FC = () => {
           <button className="header__cta-button" aria-label="Comece agora">
             <a 
               className="header__sign-up-link" 
-              href="https://wa.me/5511961482191" 
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#orcamento" 
             >
               Fazer um orçamento
             </a>
