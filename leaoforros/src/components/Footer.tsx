@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
         <div className="footer__item">
           <h3>Fale Conosco</h3>
           <a
-            href="https://wa.me/5511961482191" 
+            href="https://wa.me/5511958667824" 
             target="_blank"
             rel="noopener noreferrer"
             className="footer__whatsapp-link"
