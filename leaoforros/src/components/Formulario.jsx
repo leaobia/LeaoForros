@@ -12,19 +12,19 @@ function Formulario() {
   });
 
   const handleCepChange = async (e) => {
-    const novoCep = e.target.value;
+    let novoCep = e.target.value.replace(/\D/g, ""); 
     setCep(novoCep);
-
+  
     if (novoCep.length === 8) {
       try {
         const response = await axios.get(`https://viacep.com.br/ws/${novoCep}/json/`);
         const data = response.data;
-
+  
         if (data.erro) {
           alert("CEP inválido. Tente novamente!");
           return;
         }
-
+  
         setEndereco({
           logradouro: data.logradouro,
           bairro: data.bairro,
@@ -35,7 +35,7 @@ function Formulario() {
         alert("Erro ao buscar o endereço. Tente novamente!");
       }
     }
-  };
+  };  
 
   const handleEnviarZap = () => {
     const mensagem = `Olá, me chamo ${nome} , gostaria de realizar um orçamento e aqui estão meus dados:
@@ -49,7 +49,7 @@ function Formulario() {
 
   return (
     <div style={{ padding: "20px", maxWidth: "400px", margin: "auto" }}  id="orcamento">
-      <h2>Solicitar Orçamento</h2>
+      <h2 className="clients-section__title">Solicitar Orçamento</h2>
       <div>
         <label>Nome:</label>
         <input
