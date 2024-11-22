@@ -4,6 +4,11 @@ import '../estilo/project.scss';
 import carrosselImg1 from '../img/carrossel.png';
 import carrosselImg2 from '../img/carrossel2.png';
 import carrosselImg3 from '../img/carrossel3.jpeg';
+import carrosselImg4 from '../img/carrossel4.jpg';
+import carrosselImg5 from '../img/carrossel5.png';
+import carrosselImg6 from '../img/carrossel6.webp';
+import carrosselImg7 from '../img/carrossel7.jpg';
+import carrosselImg8 from '../img/carrossel8.webp';
 
 interface Slide {
   img: string;
@@ -12,14 +17,14 @@ interface Slide {
 }
 
 const slides: Slide[] = [
-  { img: carrosselImg1, alt: 'Slide 1', description: 'Obra de modernização de escritório' },
-  { img: carrosselImg2, alt: 'Slide 2', description: 'Reforma e ampliação residencial' },
-  { img: carrosselImg3, alt: 'Slide 3', description: 'Construção de nova sede comercial' },
-  { img: carrosselImg1, alt: 'Slide 1', description: 'Obra de modernização de escritório' },
-  { img: carrosselImg2, alt: 'Slide 2', description: 'Reforma e ampliação residencial' },
-  { img: carrosselImg2, alt: 'Slide 2', description: 'Reforma e ampliação residencial' },
-  { img: carrosselImg3, alt: 'Slide 3', description: 'Construção de nova sede comercial' },
-  { img: carrosselImg1, alt: 'Slide 1', description: 'Obra de modernização de escritório' }
+  { img: carrosselImg1, alt: 'Slide 1', description: 'Transformação de ambiente corporativo moderno' },
+  { img: carrosselImg2, alt: 'Slide 2', description: 'Reforma completa e expansão de residência' },
+  { img: carrosselImg3, alt: 'Slide 3', description: 'Desenvolvimento de nova infraestrutura empresarial' },
+  { img: carrosselImg4, alt: 'Slide 4', description: 'Reestruturação de espaço de trabalho inovador' },
+  { img: carrosselImg5, alt: 'Slide 5', description: 'Ampliando e modernizando um lar' },
+  { img: carrosselImg6, alt: 'Slide 6', description: 'Projeto de renovação e expansão residencial' },
+  { img: carrosselImg7, alt: 'Slide 7', description: 'Construção de sede empresarial de última geração' },
+  { img: carrosselImg8, alt: 'Slide 8', description: 'Revitalização de escritório com novos conceitos' }
 ];
 
 interface ProjectCardProps {

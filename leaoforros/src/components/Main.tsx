@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import '../estilo/main.scss';
-import Projects from './Projects.tsx';
-import Clients from './Clients.tsx';
-import Formulario from './Formulario.jsx';
+import Projects from './Projects';
+import Clients from './Clients';
+import Formulario from './Formulario';
 
 import carrosselImg1 from '../img/carrossel.png';
 import carrosselImg2 from '../img/carrossel2.png';

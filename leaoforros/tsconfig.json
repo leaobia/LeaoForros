@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "esnext",                                
+    "moduleResolution": "node",                       
+    "jsx": "react-jsx",                              
+    "lib": ["dom", "dom.iterable", "esnext"],       
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "esModuleInterop": true,                           
+    "forceConsistentCasingInFileNames": true,         
+    "skipLibCheck": true,                             
+    "strict": true,                                   
+    "resolveJsonModule": true,                        
+    "noEmit": true   ,
+    "allowImportingTsExtensions": true                                 
+  },
+  "include": [
+    "src"
+  ]
+}

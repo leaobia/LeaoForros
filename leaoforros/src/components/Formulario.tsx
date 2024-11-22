@@ -1,30 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, ChangeEvent } from "react";
 import axios from "axios";
 
+// Tipagem para o endereço
+interface Endereco {
+  logradouro: string;
+  bairro: string;
+  localidade: string;
+  uf: string;
+}
+
 function Formulario() {
-  const [nome, setNome] = useState("");
-  const [cep, setCep] = useState("");
-  const [endereco, setEndereco] = useState({
+  const [nome, setNome] = useState<string>("");
+  const [cep, setCep] = useState<string>("");
+  const [endereco, setEndereco] = useState<Endereco>({
     logradouro: "",
     bairro: "",
     localidade: "",
     uf: "",
   });
 
-  const handleCepChange = async (e) => {
+  const handleCepChange = async (e: ChangeEvent<HTMLInputElement>) => {
     let novoCep = e.target.value.replace(/\D/g, ""); 
     setCep(novoCep);
-  
+
     if (novoCep.length === 8) {
       try {
         const response = await axios.get(`https://viacep.com.br/ws/${novoCep}/json/`);
         const data = response.data;
-  
+
         if (data.erro) {
           alert("CEP inválido. Tente novamente!");
           return;
         }
-  
+
         setEndereco({
           logradouro: data.logradouro,
           bairro: data.bairro,
